@@ -30,7 +30,7 @@ const checkWin = ()=>{
             document.getElementsByTagName('img')[0].style.width = "205px";
         };
     });
-}[
+}
 
 let boxes = document.getElementsByClassName("box"); 
 Array.from(boxes).forEach(element =>{
