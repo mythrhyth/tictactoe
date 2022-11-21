@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0px; 
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+nav ul {
+    background-color: #fbb346;
+    color: white; 
+    font-weight: bold;
+    width: 100%; 
+    height: 55px;
+    list-style-type: none;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gameContainer{
+    display: flex; 
+    margin-top: 50px; 
+    justify-content: center; 
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Lato', sans-serif;
+}
+.box{
+    border: 2px solid 	#5C4033;
+    font-size: 8vw;
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center;
+}
+.box:hover{
+    background-color: #C8D9F0 ;
+}
+.gameInfo{
+    padding: 0 54px;
+}
+.gameInfo h1{
+    color: #fb8500;
+    line-height: 32px;
+    font-weight: bold;
+}
+.imgbox img{
+    width: 0; 
+    transition: 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0; 
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 0 33px;
+    padding: 2px 15px 8px;
+    background-color: #ff6242;
+    color: white;
+    border: 2px solid #f44336;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+}
+#reset :hover{
+    background-color: transparent;
+}
+.info{
+    font-size: 32px;
+    
+}
+@media screen and (max-width: 800px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
